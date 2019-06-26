@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-oscilloscope {
+    width: 50vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.music-oscilloscope__area {
+    width: 100%;
+    height: 80%;
+
+    border: 1px solid;
+}
+
+.music-oscilloscope__controls {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.music-oscilloscope__buttons button {
+    border: 1px solid black;
+    float: left;
+
+    padding: 5px 10px;
+}
+
+.music-oscilloscope__angle-down {
+    border-radius: 50% 0 0 50%;
+    border-right: none;
+}
+
+.music-oscilloscope__play {
+    /*display: none;*/
+}
+
+.music-oscilloscope__angle-up {
+    border-radius: 0 50% 50% 0;
+}
+
+.music-oscilloscope__sound {
+    display: flex;
+    align-items: center;
+}
+
+.music-oscilloscope__sound-mute {
+    display: none;
+}
